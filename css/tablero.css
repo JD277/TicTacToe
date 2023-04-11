@@ -1,46 +1,47 @@
 body{
     background-color: rgb(31, 31, 34);
     font-family: arial;
-    overflow: hidden;
 }
 
 
 .game{
-    width: 97vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:auto;
 
 }
 
 .table{
-    width: 500px;
-    height: 500px;
+    width: 30em;
+    height: 30em;
     display: grid;
+    position: relative;
     justify-content: center;
     grid-template-rows: repeat(3, auto);
-    margin:auto;
 }
 
 .fila1{
     position: absolute;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, auto);
-    width: 500px;
-    top: 70px;
+    width: 100%;
+    left: 0;
 }
 
 .fila2{
     position: absolute;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, auto);
-    width: 500px;
-    top: 229px;
+    width: 100%;
+    top: 10.1em;
+    left: 0;
 }
 
 .fila3{
@@ -48,8 +49,9 @@ body{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, auto);
-    width: 500px;
-    top: 388px;
+    width: 100%;
+    left: 0;
+    top: 20em;
 }
 /*Filas*/
 
@@ -63,24 +65,24 @@ hr{
 }
 
 .hr1{
-    height: 495px;
+    height: 29em;
     width: 15px;
-    margin-right: 170px;
+    margin-right: 190px;
 }
 .hr2{
-    height: 495px;
+    height: 29em;
     width: 15px;
     margin-left: 170px;
 }
 .hr3{
     height: 15px;
-    width: 495px;
-    margin-top: 150px;
+    width: 29em;
+    margin-top: 10em;
 }
 .hr4{
     height: 15px;
-    width: 495px;
-    margin-bottom: 180px;
+    width: 29em;
+    margin-bottom: 11em;
 }
 /*Lineas Divisoras*/
 
@@ -116,3 +118,35 @@ hr{
     opacity: 0;
 }
 /*Cuadrados*/
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .game{
+        left: 60px;
+    }
+    .circulo{
+        width: 80px;
+        height: 80px;
+        border: 12px solid rgb(26, 59, 207);
+    }
+    .equis{
+        font-size: 130px;
+    }
+    .hr1{
+        right: 3em;
+
+    }
+    .hr2{
+        left: 4em;
+    }
+    .hr3{
+        margin-bottom: 23em;
+    }
+    .hr4{
+        margin-top: 18em;
+    }
+    .fila2{
+        top: 9em;
+    }
+    .fila3{
+        top: 19em;
+    }
+}

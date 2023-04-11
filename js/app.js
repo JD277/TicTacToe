@@ -108,7 +108,11 @@ function comprobaciones(){
                 break;
             case slots[2] === "x" && slots[4] === "x" && slots[6] === "x":
                 ganoX()
-                console.log(slots[2], slots[4], slots[8])
+                break;
+
+            case slots[0].length === 1 && slots[1].length === 1 && slots[2].length === 1 && slots[3].length === 1 && 
+            slots[4].length === 1 && slots[5].length === 1 && slots[6].length === 1 && slots[7].length === 1 && slots[8].length === 1:
+                draw()
                 break;
         }
     }, 100);
